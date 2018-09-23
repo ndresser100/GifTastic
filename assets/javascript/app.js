@@ -1,7 +1,7 @@
-//Initial array of movies	
+//Initial array of movies   
 $(document).ready(function() {
 
-    var topics = ["Spiderman", "Thor", "Iron Man", "Captain America", "Avengers", "Deadpool", "Batman", "Superman", "Wonderwoman", "Aquaman", "Flash", "Justice League"];	
+    var topics = ["Spiderman", "Thor", "Iron Man", "Captain America", "Avengers", "Deadpool", "Batman", "Superman", "Wonderwoman", "Aquaman", "Flash", "Justice League"];   
   
     //  create topics array buttons
     function renderButtons(){
@@ -19,13 +19,13 @@ $(document).ready(function() {
           renderButtons();
   
   //on button click
-  $(document).on('click', 'superhero', function() {
+  $(document).on('click', '.superhero', function() {
   
       //new variable will log the text data from each button
-      var superPowers = $(this).html(); 
-      // console.log(martialArts);
+      var superHeros = $(this).html(); 
+      // console.log(superHeros);
   
-      var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + superPowers + "&api_key=dc6zaTOxFJmzC&limit=10";
+      var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + superHeros + "&limit=10&api_key=dc6zaTOxFJmzC&limit=10";
       // console.log(queryURL);
   
       // Creating an AJAX call for the specific movie button being clicked
